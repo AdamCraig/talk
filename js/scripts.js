@@ -1,7 +1,7 @@
 $(document).ready(function() {
-  $("button#hello").click(function() {
-    $("ul#user").prepend("<li>Hello!</li>");
-    $("ul#webpage").prepend("<li>Hola!</li>");
+  $("button#bark").click(function() {
+    $("ul#user").prepend("<li>Bark!</li>");
+    $("ul#webpage").prepend("<li>Meow!</li>");
     $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
@@ -10,9 +10,9 @@ $(document).ready(function() {
     });
   });
 
-  $("button#goodbye").click(function() {
-    $("ul#user").prepend("<li>Goodbye!</li>");
-    $("ul#webpage").prepend("<li>Adios!</li>");
+  $("button#meow").click(function() {
+    $("ul#user").prepend("<li>Grrr!</li>");
+    $("ul#webpage").prepend("<li>Hisss!</li>");
     $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
@@ -21,9 +21,9 @@ $(document).ready(function() {
     });
   });
 
-  $("button#stop").click(function() {
-    $("ul#user").prepend("<li>Stop copying me!</li>");
-    $("ul#webpage").prepend("<li>No mas!</li>");
+  $("button#pic").click(function() {
+    $("ul#user").after("ADD IMAGE HERE");
+    $("ul#webpage").prepend("<li>Meow!</li>");
     $("ul#user").children("li").first().click(function() {
       $(this).remove();
     });
@@ -31,4 +31,5 @@ $(document).ready(function() {
       $(this).remove();
     });
   });
+
 });
